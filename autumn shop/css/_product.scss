@@ -1,0 +1,349 @@
+.product-page {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding-top: 32px;
+    padding-bottom: 80px;
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 7px;
+    font-size: 13px;
+    color: #746B64;
+}
+
+.product-detail {
+    display: flex;
+    gap: 52px;
+}
+
+.gallery {
+    position: relative;
+    display: flex;
+    gap: 16px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    & img {
+        border-radius: 12px;
+        border: solid 1px #F1D7C2;
+    }
+
+    & :first-child {
+        border-color: #FB7201;
+    }
+}
+
+.favotite {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.product-purchase {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    & button {
+        color: white;
+        font-weight: bold;
+        background-color: #FB7201;
+        padding: 14px 22px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+}
+
+.title-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & .product-name {
+        color: #1E1A17;
+        font-size: 44px;
+        font-weight: bold;
+    }
+}
+
+.collection {
+    font-size: 12px;
+    color: #FB7201;
+    font-weight: bold;
+}
+
+.rating {
+    display: flex;
+    gap: 8px;
+
+    & :nth-child(1) {
+        font-size: 16px;
+        color: #FB7201;
+    }
+
+    & :nth-child(2) {
+        font-size: 14px;
+        color: #1E1A17;
+        font-weight: bold;
+    }
+
+    & :nth-child(3) {
+        font-size: 14px;
+        color: #746B64;
+    }
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FB7201;
+}
+
+.description {
+    font-size: 16px;
+    color: #746B64;
+}
+
+.color-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #1E1A17;
+    }
+}
+
+.colors {
+    display: flex;
+    gap: 10px;
+
+    & div {
+        border-radius: 100%;
+        width: 34px;
+        aspect-ratio: 1 / 1;
+        cursor: pointer;
+    }
+
+    & :nth-child(1) {
+        background-color: #FB7201;
+        border: solid 2px #1E1A17;
+    }
+
+    & :nth-child(2) {
+        background-color: #433B36;
+    }
+
+    & :nth-child(3) {
+        background-color: #F0D9BD;
+    }
+}
+
+.siez-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.size-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    & :first-child {
+        font-size: 14px;
+        font-weight: bold;
+        color: #1E1A17;
+    }
+
+    & :last-child {
+        font-size: 13px;
+        color: #FB7201;
+        text-decoration: underline;
+    }
+}
+
+.sizes {
+    display: flex;
+    gap: 8px;
+
+    & div {
+        border-radius: 25px;
+        padding: 10px 16px;
+        border: solid 1px #F1D7C2;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+.selected-size {
+    background-color: #FB7201;
+    color: white;
+    border-color: #FB7201;
+}
+
+.delivery-note {
+    display: flex;
+    padding: 16px 16px;
+    gap: 12px;
+    font-size: 13px;
+    color: #746B64;
+    border-radius: 12px;
+    background-color: #FFF7F0;
+
+    & img {
+        width: 22px;
+    }
+}
+
+.product-facts {
+    display: flex;
+    flex-direction: column;
+
+    & .fact {
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 0;
+        font-size: 14px;
+        border-bottom: solid 1px #F1D7C2;
+
+        & :first-child {
+            font-weight: bold;
+            color: #1E1A17;
+        }
+
+        & :last-child {
+            color: #746B64;
+        }
+    }
+}
+
+.product-promise {
+    display: flex;
+    width: 100%;
+    padding: 28px 32px;
+    justify-content: space-between;
+    background-color: #FFF7F0;
+    border-radius: 20px;
+}
+
+.promise {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    width: 330px;
+
+    & img {
+        width: 26px;
+    }
+
+    & .copy {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+
+        & :first-child {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1E1A17;
+        }
+
+        & :last-child {
+            font-size: 13px;
+            color: #746B64;
+        }
+    }
+}
+
+.recommendations {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    & .section-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        & :first-child {
+            font-size: 36px;
+            font-weight: bold;
+            color: #FB7201;
+        }
+
+        & :last-child {
+            font-size: 15px;
+            color: #746B64;
+        }
+    }
+
+    & .product-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & .product-card {
+            position: relative;
+            display: flex;
+            gap: 14px;
+            width: fit-content;
+        }
+
+        & .product-image {
+            border-radius: 20px;
+        }
+
+        & .product-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+        }
+
+        & .name-price {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            & :first-child {
+                font-size: 18px;
+                font-weight: bold;
+                color: #1E1A17;
+            }
+
+            & :last-child {
+                font-size: 16px;
+                font-weight: bold;
+                color: #FB7201;
+            }
+        }
+
+        & .favorite {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            width: 38px;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 100%;
+            cursor: pointer;
+
+            & img {
+                margin: 0;
+            }
+        }
+    }
+}

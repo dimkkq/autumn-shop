@@ -4,6 +4,8 @@
 @use 'profile';
 @use 'about';
 @use 'cart';
+@use 'product';
+@use 'favorites';
 
 *,
 *::before,
@@ -180,18 +182,19 @@ main {
 .product-row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .product-card {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 285px;
+    width: fit-content;
     height: 385px;
+    gap: 14px;
 
     & img {
         border-radius: 20px;
-        margin-bottom: 14px;
     }
 
     & .badge {
