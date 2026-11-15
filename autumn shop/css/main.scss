@@ -6,6 +6,7 @@
 @use 'cart';
 @use 'product';
 @use 'favorites';
+@use 'catalog';
 
 *,
 *::before,
@@ -183,6 +184,7 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    row-gap: 24px;
 }
 
 .product-card {
@@ -190,7 +192,6 @@ main {
     flex-direction: column;
     position: relative;
     width: fit-content;
-    height: 385px;
     gap: 14px;
 
     & img {
