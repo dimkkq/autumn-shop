@@ -1,0 +1,132 @@
+.reviews-page {
+    padding-top: 48px;
+    padding-bottom: 80px;
+    gap: 36px;
+}
+
+.review-summary {
+    display: flex;
+    align-items: center;
+    padding: 26px 28px;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #FFF7F0;
+    border-radius: 20px;
+
+    & .rev-product-info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: #1E1A17;
+
+        & .product {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        & .price {
+            font-size: 16px;
+            color: #FB7201;
+            font-weight: bold;
+        }
+
+        & .rev-rating {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            & :nth-child(1) {
+                font-size: 16px;
+                color: #FB7201;
+            }
+            & :nth-child(2) {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            & :nth-child(3) {
+                font-size: 14px;
+                color: #746B64
+            }
+        }
+        & :last-child {
+            font-size: 13px;
+            color: #23845A;
+        }
+    }
+
+    & button {
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #FB7201;
+        padding: 14px 22px;
+        border-radius: 100px;
+        height: fit-content;
+    }
+
+    & .average-rating {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+
+        & :nth-child(1) {
+            font-size: 64px;
+            font-weight: bold;
+            color: #FB7201;
+        }
+
+        & :nth-child(2) {
+            font-size: 20px;
+            color: #FB7201;
+        }
+
+        & :nth-child(3) {
+            font-size: 13px;
+            color: #746B64;
+        }
+    }
+
+    & .rating-bars {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        color: #746B64;
+        & .ratingrow {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            & :first-child:where(p) {
+                width: 28px;
+            }
+            & .track {
+                position: relative;
+                width: 140px;
+                height: 7px;
+                border-radius: 100px;
+                background-color: white;
+                & .fill {
+                    position: absolute;
+                    left: 0;
+                    background-color: #FB7201;
+                    width: 100%;
+                    height: 7px;
+                    border-radius: 100px;
+                }
+                & .p0 {
+                    width: 0;
+                }
+                & .p2 {
+                    width: 2%;
+                }
+                & .p6 {
+                    width: 6%;
+                }
+                & .p92 {
+                    width: 92%;
+                }
+            }
+        }
+    }
+}
