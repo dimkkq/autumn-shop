@@ -4,31 +4,6 @@
     gap: 36px;
 }
 
-.privetstvie {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-
-    & :nth-child(1) {
-        color: #FB7201;
-        font-weight: bold;
-        font-size: 14px;
-    }
-
-    & :nth-child(2) {
-        font-weight: bold;
-        font-size: 48px;
-        color: #1E1A17;
-    }
-
-    & :nth-child(3) {
-        font-size: 18px;
-        color: #746B64;
-    }
-
-}
-
 .profile-wrapper {
     display: flex;
     flex-direction: row;
@@ -47,6 +22,7 @@
 .profile-avatar {
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 20px;
     gap: 14px;
     background-color: #FFF7F0;
@@ -61,6 +37,7 @@
             color: #1E1A17;
             font-size: 17px;
             font-weight: bold;
+            white-space: nowrap;
         }
 
         & :nth-child(2) {
