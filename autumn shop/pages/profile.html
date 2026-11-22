@@ -34,8 +34,8 @@
             </div>
         </div>
     </header>
-    <main class="profile">
-        <div class="privetstvie">
+    <main class="profile-scss">
+        <div class="page-heading">
             <p>Личный кабинет</p>
             <p>Добрый день, Артемий!</p>
             <p>Здесь хранятся ваши заказы, адреса и любимые вещи.</p>
@@ -62,33 +62,66 @@
                     <p>Мои заказы</p>
                     <p>3 заказа</p>
                 </div>
-                <div>
-                    <div class="all-orders">
-                        <div class="in-process-order">
-                            <div class="order-id">
-                                <p>Заказ №ЯМ-1048</p>
-                                <p>26 сентября 2026</p>
-                            </div>
-                            <p class="order-status">В пути</p>
+                <div class="active-order">
+                    <div class="active-order-status">
+                        <div class="order-id">
+                            <p>Заказ №ЯМ-1048</p>
+                            <p>26 сентября 2026</p>
                         </div>
-                        <div>
-                            <div class="status-bar">
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div></div>
+                        <div class="order-status">
+                            <p>В пути</p>
                         </div>
-                        <div></div>
-                        <div></div>
                     </div>
-                    
+                    <div class="status-bar-big-div">
+                        <div class="status-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="status-bar-txt">
+                            <p>Оформлен</p>
+                            <p>Собран</p>
+                            <p>В пути</p>
+                            <p>Получен </p>
+                        </div>
+                    </div>
+                    <div class="order-items">
+                        <img src="../img/hudi-zakat.png" alt="">
+                        <div class="order-items-txt">
+                            <p>Худи «Закат»</p>
+                            <p>M · Спелый апельсин · 1 шт.</p>
+                            <p>Ожидаемая доставка: 29 сентября</p>
+                        </div>
+                        <p class="order-item-price">7 490 ₽</p>
+                    </div>
+                    <div class="order-actions">
+                        <div class="order-actions-txt">
+                            <p>Итого:</p>
+                            <p>7 490 ₽</p>
+                        </div>
+                        <button>Отследить заказ</button>
+                    </div>
                 </div>
-                <div></div>
-                <div></div>
+                <div class="previous-order">
+                    <div class="order-id">
+                        <p>Заказ №ЯМ-0961</p>
+                        <p>12 августа 2026</p>
+                    </div>
+                    <p class="previous-order-green-txt">Получен</p>
+                    <p class="previous-order-txt">11 480 ₽</p>
+                    <img src="../img/chevron-right.svg" alt="">
+                </div>
+                <div class="previous-order">
+                    <div class="order-id">
+                        <p>Заказ №ЯМ-0824</p>
+                        <p>04 июня 2026</p>
+                    </div>
+                    <p class="previous-order-green-txt">Получен</p>
+                    <p class="previous-order-txt">4 490 ₽</p>
+                    <img src="../img/chevron-right.svg" alt="">
+                </div>
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="profile-footer">
         <div class="footer-cnt">
             <div class="contacts">
                 <div class="links">

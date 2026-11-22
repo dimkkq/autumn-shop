@@ -6,6 +6,9 @@
 
 .page-heading {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 
     & :nth-child(1) {
         color: #FB7201;
