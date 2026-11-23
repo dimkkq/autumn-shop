@@ -31,6 +31,10 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    & a:hover {
+        text-decoration: underline;
+    }
 }
 
 .footer-logo p {
