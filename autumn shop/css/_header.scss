@@ -31,12 +31,15 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #FB7201;
 
     &::before {
         content: url(../img/logo.svg);
+    }
+
+    & a {
+        font-size: 30px;
+        font-weight: bold;
+        color: #FB7201;
     }
 }
 
@@ -70,15 +73,15 @@ nav {
 
     }
 
-    & .fav {
+    & .fav::before {
         content: url(../img/heart.svg);
     }
 
-    & .cart {
+    & .cart::before {
         content: url(../img/shopping-bag.svg);
     }
 
-    & .profile {
+    & .profile::before {
         content: url(../img/user-round.svg);
     }
 }

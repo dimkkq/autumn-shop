@@ -30,12 +30,14 @@ nav :nth-child(3) {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-size: 30px;
-  font-weight: bold;
-  color: #FB7201;
 }
 .logo::before {
   content: url(../img/logo.svg);
+}
+.logo a {
+  font-size: 30px;
+  font-weight: bold;
+  color: #FB7201;
 }
 
 .search {
@@ -64,13 +66,13 @@ nav :nth-child(3) {
   transform: translateY(10%);
   content: url(../img/search.svg);
 }
-.search .fav {
+.search .fav::before {
   content: url(../img/heart.svg);
 }
-.search .cart {
+.search .cart::before {
   content: url(../img/shopping-bag.svg);
 }
-.search .profile {
+.search .profile::before {
   content: url(../img/user-round.svg);
 }
 
@@ -110,6 +112,9 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.links a:hover {
+  text-decoration: underline;
 }
 
 .footer-logo p {
